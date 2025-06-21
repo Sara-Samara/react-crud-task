@@ -5,7 +5,7 @@ import Details from './page/details/Details'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Edit from './page/edit/Edit'
-import Home from "./page/Home/Home";
+import Home from "./page/homepage/Home";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/Create" element={<Create />} />
         <Route path="/Details/:userId" element={<Details />} />
         <Route path="/Edit/:userId" element={<Edit />} />
