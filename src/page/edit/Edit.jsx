@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; // هذا السطر لحاله كافي
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Bounce, toast } from 'react-toastify';
@@ -8,7 +8,7 @@ import Loader from '../../component/loader/Loader';
 
 export default function Edit() {
   const {register,handleSubmit , setValue } = useForm();
-   const [isLoading , setLoading] = useState(true);
+
   const navigate = useNavigate();
   const { userId } = useParams(); 
     const getDetails = async()=>{
@@ -20,12 +20,9 @@ export default function Edit() {
                 console.error(err);
                 alert("Error creating user ❌");
             } 
-            finally{
-                setLoading(false);
-            }
+
     };
 
-    if (isLoading) {return <Loader/>;}
 
     useEffect(()=>{getDetails();},[]);
 
