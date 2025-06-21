@@ -1,11 +1,11 @@
-import Navbar from './component/Navbar/Navbar'
+import Navbar from "./component/navbar/Navbar";
 import { Route, Routes } from 'react-router-dom'
 import Create from './page/create/Create'
 import Details from './page/details/Details'
-import Home from './page/Home/Home'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Edit from './page/edit/Edit'
+import Home from "./page/Home/Home";
 
 export default function App() {
   return (
