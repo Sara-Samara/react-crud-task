@@ -1,5 +1,4 @@
 import Navbar from './component/Navbar/Navbar'
-import Footer from './component/Footer/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Create from './page/create/Create'
 import Details from './page/details/Details'
@@ -14,7 +13,6 @@ export default function App() {
 
       
       <Navbar/>
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Create" element={<Create />} />
@@ -22,7 +20,7 @@ export default function App() {
         <Route path="/Edit/:userId" element={<Edit />} />
       </Routes>
       <ToastContainer />
-      <Footer/>
+
 
     </>
   )
